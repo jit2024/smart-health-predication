@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #6200ea;
+            padding: 20px 0;
+        }
+
+        header .logo h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(to right, #42a5f5, #7e57c2);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            max-width: 50%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .hero-content button {
+            background-color: #ffeb3b;
+            color: #6200ea;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .hero-content button:hover {
+            background-color: #ffd600;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #ff7043;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        #about img {
+            width: 50%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Services Section */
+        #services {
+            background-color: #66bb6a;
+            padding: 60px 0;
+            color: white;
+        }
+
+        #services .service {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #services .service img {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        #services h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        #services p {
+            font-size: 1.2rem;
+        }
+
+        /* Contact Us Section */
+        #contact {
+            background-color: #29b6f6;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            background-color: #ffeb3b;
+            color: #6200ea;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: #ffd600;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #424242;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Health Services</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Your Health, Our Priority</h2>
+            <p>Providing quality healthcare services for everyone.</p>
+            <button>Learn More</button>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyCIv7nnr-FUXDgPCJuM29JPXXSk9Hj72UA&s" alt="Healthcare hero image">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to delivering the best health services to our community.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLdpWxNX5mho0TFbZBCoYkd3uC_jH12rem9g&s" alt="About Us">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Primary Care</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOwHFrWsbmmSUrVafGcTN7bJ72x2tFW2yuw&s">
+                <p>Comprehensive healthcare services to meet your needs.</p>
+            </div>
+            <div class="service">
+                <h3>Specialty Care</h3>
+                <img src="data:image/jpeg;base64,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">
+                <p>Expert care in various medical fields.</p>
+            </div>
+            <div class="service">
+                <h3>Emergency Services</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVMtWMyrqRX42nouhT4gqgSEChwqI7jIM4FQ&s">
+                <p>Immediate care for life-threatening conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Health Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
